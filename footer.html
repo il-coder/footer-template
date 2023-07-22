@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .footer {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background-color: #232F3E;
+                color: #fff;
+                justify-content: space-around; /* horizontally align properly */
+                align-items: flex-start;    /* vertically center */
+                align-content: space-between; /* align multilines of flex-items */
+                padding-bottom: 20px;
+            }
+            .footer .item ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .footer .item li {
+                padding: 5px 0px;
+            }
+            @media only screen  and (max-width: 450px) {
+                .footer {
+                    flex-direction: column;
+                }
+                .footer .item {
+                    margin-bottom: 5vh;
+                    width: 100vw;
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <footer class="footer">
+            <div class="item">
+                <h3>Get to know us</h3>
+                <ul>
+                    <li>About us</li>
+                    <li>Press release</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>Connect with us</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Cart</li>
+                    <li>Profile</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
